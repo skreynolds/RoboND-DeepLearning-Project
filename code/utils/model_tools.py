@@ -1,6 +1,12 @@
 import os
 import json
-from tensorflow.contrib.keras.python import keras 
+
+# Running from Ubuntu AWS instance - tensorflow 1.2
+#from tensorflow.contrib.keras.python import keras
+
+# Running locally - tensorflow-gpu 1.4 installed
+from tensorflow.python import keras
+
 from scipy import misc
 from . import data_iterator
 import numpy as np

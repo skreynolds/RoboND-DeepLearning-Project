@@ -32,8 +32,14 @@ from glob import glob
 from scipy import misc
 
 import numpy as np
-from tensorflow.contrib.keras.python.keras.preprocessing.image import Iterator
-from tensorflow.contrib.keras.python.keras import backend as K
+
+# Running from Ubuntu AWS instance - tensorflow 1.2
+#from tensorflow.contrib.keras.python.keras.preprocessing.image import Iterator
+#from tensorflow.contrib.keras.python.keras import backend as K
+
+# Running locally - tensorflow-gpu 1.4 installed
+from tensorflow.python.keras.preprocessing.image import Iterator
+from tensorflow.python.keras import backend as K
 
 
 def preprocess_input(x):
