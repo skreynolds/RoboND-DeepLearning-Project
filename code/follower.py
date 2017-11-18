@@ -46,7 +46,13 @@ from io import BytesIO
 from scipy import misc
 
 from transforms3d.euler import euler2mat, mat2euler
-from tensorflow.contrib.keras.python import keras
+
+# Running from Ubuntu AWS instance - tensorflow 1.2
+#from tensorflow.contrib.keras.python import keras
+
+# Running locally - tensorflow-gpu 1.4 installed
+from tensorflow.python import keras
+
 from utils import separable_conv2d
 
 from utils import data_iterator
